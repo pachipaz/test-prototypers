@@ -1,0 +1,471 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+
+.container-fluid {
+	padding:0px !important;
+}
+
+.tea{
+	background-image: url("../img/parallax-1.jpg");
+	height:633px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.icono{
+width: 97px;
+height: 78px;
+margin-left: 10%;
+margin-top: 13%;
+} 
+.marca{
+	width: 100%;
+    height: 45%;
+    margin-top: 35%;
+    margin-left: 3%;
+}
+
+/*MENU DE NAVEGACION*/
+.nav {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  border: none;
+}
+
+.nav-content {
+  position: fixed;
+  top: -100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:  rgba(0,0,0,0.8);
+  display: block;
+  height: 100%;
+  z-index: 9;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: 30%;
+}
+
+.item-anchor:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  background: transparent;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.item-anchor {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.item-anchor:hover,
+.item-anchor:focus {
+  color: #FCA311;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.item-anchor:hover:after,
+.item-anchor:focus:after{
+  width: 100%;
+  background: #FCA311;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.nav-item {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.hideNav {
+  -webkit-animation: hideNav 1s ease forwards;
+  -moz-animation: hideNav 1s ease forwards;
+  -o-animation: hideNav 1s ease forwards;
+  animation: hideNav 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+/*BOTON MENU HAMBURGUESA*/
+btn-nav {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.btn-nav:focus {
+  outline: 0;
+}
+
+.icon-bar {
+  display: block;
+  margin: 6px 0;
+  width: 40px;
+  height: 5px;
+  background-color: #FFFFFF;
+}
+
+.btn-nav:hover .icon-bar {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: white;
+}
+
+.animated {
+  display: block;
+  margin: 0 auto;
+}
+
+.animated:hover .icon-bar,
+.animated:focus .icon-bar{
+  background-color:white;
+}
+
+.animated:focus {
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.icon-bar {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  z-index: 999999;
+}
+
+.animated .icon-bar {
+  z-index: 999999;
+  background-color: #FCA311;
+}
+
+.animated .top {
+  -webkit-transform: translateY(10px) rotateZ(45deg);
+  -moz-transform: translateY(10px) rotateZ(45deg);
+  -ms-transform: translateY(10px) rotateZ(45deg);
+  -o-transform: translateY(10px) rotateZ(45deg);
+  transform: translateY(10px) rotateZ(45deg);
+}
+
+.animated .bottom {
+  -webkit-transform: translateY(-11px) rotateZ(-45deg);
+  -moz-transform: translateY(-11px) rotateZ(-45deg);
+  -ms-transform: translateY(-11px) rotateZ(-45deg);
+  -o-transform: translateY(-11px) rotateZ(-45deg);
+  transform: translateY(-11px) rotateZ(-45deg);
+}
+
+.animated .middle {
+  width: 0;
+}
+
+/*ANIMACION BOTON*/
+@keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-moz-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-o-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.showNav {
+  -webkit-animation: showNav 1s ease forwards;
+  -moz-animation: showNav 1s ease forwards;
+  -o-animation: showNav 1s ease forwards;
+  animation: showNav 1s ease forwards;
+}
+
+@keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@-webkit-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@-moz-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@-o-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+/*Seccion color*/
+.verde{
+	background-color:#8EC641;
+	height:102px;
+}	
+.pasion{
+	background-image: url("../img/parallax-3.jpg");
+	height: 633px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.descripcion, .nuestra {
+	color: white;
+	margin-top: 100px;
+	margin-left: 33px;
+}
+.descripcion {
+	margin-top: 27px;
+}
+/*tipos de te */
+.tipos{
+	background-color: white;
+	height: 801px;
+}
+.tipo-te{
+	color:#ED9A9D;
+	font-size: 20px;
+	text-align: center;
+	font-size: 46px;	
+}
+.text{
+	font-size: 15px;
+}
+/*seccion preguntas sobre el té*/
+.preguntas{
+	background-image: url("../img/parallax-2.jpg");
+	height: 633px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.sobre{
+	color: white;
+}
+.medidas{
+	height: 608px;
+}
+/*seccion amarillo*/
+.amarillo{
+	background-color:#F0E7AE;
+	height:102px;	
+}		
+
+/*agua*/
+.agua{
+	background-color: white;
+	height: 608px;
+}
+/*seccion rosa*/
+.rosado{
+	background-color:#ED9A9D;
+	height:102px;	
+}
+/*Cuanto ingerir*/
+.cantidad{
+	background-color: white;
+	height: 608px;
+}
+/*Seccion amamos el te*/
+.love{
+	height: 1264px;
+	background-color: white;
+}
+.linea{
+	width: 20px;
+	height: 2px;
+    background-color:black;
+}
+/*FOOTER*/
+footer{
+	background-color: #3B3B3B;
+	height: 102px;
+}
+.fin{
+	color:grey;
+}
+
+
+
+/*MEDIAS QUERY*/
+@media(min-width: 1024px){
+.rosado, .verde, .amarillo {
+	display:none;
+}	
+.icono {
+width: 97px;
+height: 78px;
+margin-left: 5%;
+margin-top: 5%;
+}
+.marca{
+	width: 44%;
+    height: 45%;
+    margin-top: 1%;
+    margin-left: 30%;
+}
+.video{
+	height: 635px;
+}
+.reproductor{
+	width: 100%;
+}
+.nuestra {
+	font-size: 80px;
+	margin-left: 26%;
+}
+.descripcion{
+	font-size: 18px;
+	margin-left: 26%;
+	margin-right:247px;
+}
+.tipos{
+	height: 317px;
+
+}
+.text, .tipo-te{
+	display: inline-block;
+	width:160px;
+	margin-left: 127px;
+}
+.frio{
+	height: 634px;
+	width: 649px;
+	background-size: cover;
+	background-position: center;
+}
+.peque{
+	height:324px;
+	width:344px;
+	background-size: cover;
+	background-position: center;
+}
+.taza{
+	width: 100%;
+	height: 311px;
+}
+.sobre{
+	text-align: center;	
+	font-size: 80px;
+}
+.back{
+	background-color:#F0E7AE;
+	height: 635px;
+	
+}
+.tacita{
+	height: 413px;
+	text-align: center;
+	margin-top: 101px;
+	margin-left: 111px;
+}
+.back-2 {
+	background-color:#8EC641;
+	height: 608px;
+	
+}
+.back-3{
+	background-color:#ED9A9D;
+	height: 635px;
+}
+h1{
+	position: absolute;
+	margin-top: 10px;
+}
+
+}
+
+@mmedia (max-width:400px){
+
+}
