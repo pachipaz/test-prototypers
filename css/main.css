@@ -6194,15 +6194,67 @@ footer {
 
   .back-2 {
     background-color: #8EC641;
-    height: 608px; }
+    height: 580px; }
+
+  .cantidad {
+    height: 634px; }
+
+  .recomendable {
+    height: 634x; }
 
   .back-3 {
     background-color: #ED9A9D;
-    height: 635px; }
+    height: 634px; }
 
-  h1 {
+  .campos {
+    height: 633px;
+    background-size: cover;
+    background-position: center; }
+
+  .camp {
+    margin-top: 20px;
     position: absolute;
-    margin-top: 10px; } }
+    top: 360px;
+    left: 383px;
+    font-size: 80px;
+    color: white; }
+
+  .icono1 {
+    width: 97px;
+    height: 78px;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: absolute;
+    top: -21px; }
+
+  .love {
+    height: 761px;
+    background-color: white; }
+
+  .caja {
+    width: 321px;
+    height: 478px; }
+
+  footer {
+    height: 125px; }
+
+  .fin {
+    margin-top: 67px;
+    margin-left: 271px; }
+
+  .icono2 {
+    width: 97px;
+    height: 78px;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: absolute;
+    top: -44px; }
+
+  .pregunta {
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 18px; } }
 @mmedia (max-width:400px) {}
 
 /*# sourceMappingURL=main.css.map */
