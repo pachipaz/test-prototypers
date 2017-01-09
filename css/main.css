@@ -6252,9 +6252,93 @@ footer {
 
   .pregunta {
     position: absolute;
-    top: 30px;
+    top: 316px;
     color: white;
-    font-size: 18px; } }
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 219px; }
+
+  .pregunta2 {
+    position: absolute;
+    top: 155px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 35px; }
+
+  .pregunta3 {
+    position: absolute;
+    top: 145px;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    margin-left: 7px; }
+
+  .pregunta4 {
+    position: absolute;
+    top: 153px;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: -553px; }
+
+  .gramos {
+    margin-top: 90px;
+    width: 348px;
+    margin-left: 115px; }
+
+  .grm {
+    width: 348px;
+    margin-left: 115px;
+    font-size: 16px; }
+
+  .limon {
+    margin-top: 100px;
+    margin-left: 93px; }
+
+  .hervir {
+    width: 361px;
+    margin-left: 150px;
+    margin-top: 90px; }
+
+  .proceso {
+    width: 361px;
+    margin-left: 150px;
+    font-size: 15px; }
+
+  .lista1 {
+    margin-left: 150px;
+    text-align: center;
+    font-size: 15px; }
+
+  .cuanto {
+    width: 360px;
+    margin-left: 140px;
+    margin-top: 62px; }
+
+  .recomendable {
+    width: 360px;
+    margin-left: 140px; }
+
+  .lov {
+    margin-left: 155px;
+    margin-top: 10px; }
+
+  .linea {
+    margin-left: 155px;
+    width: 60px;
+    height: 4px;
+    margin-bottom: 30px; }
+
+  .amor, .elegir {
+    width: 530px;
+    margin-left: 155px; }
+
+  ul {
+    margin-left: 170px; }
+
+  .caja {
+    margin-top: 160px; } }
 @mmedia (max-width:400px) {}
 
 /*# sourceMappingURL=main.css.map */
